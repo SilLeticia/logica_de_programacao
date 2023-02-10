@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+
+function pulaLinha() {
+	document.write("<br><br>");
+}
+
+function mostra(frase) {
+	document.write(frase);
+	pulaLinha();
+}
+
+mostra("**************************************" + "<br><br>" + " VAMOS BRINCAR DE ADVINHAÇÃO?"  + "<br><br>" + "**************************************")
+
+var numeroPensado = Math.round(Math.random() * 10);
+	
+var tentativas = 1;
+
+while(tentativas <= 3 ) {
+
+	var chuteNum = parseInt(prompt("Digite seu chute:"));
+
+	if(chuteNum == numeroPensado){
+		mostra("Parabéns!!! Você acertou. O número pensado foi " + numeroPensado);
+		break;
+
+	} else {
+
+		mostra("Não foi dessa vez!");
+	}
+
+	tentativas ++;
+}
+
+mostra("FIM");
+
+/*
+var subs1 = parseInt(prompt("Qual a quantidade de carbono da substância 1?"));
+var subs2 = parseInt(prompt("Qual a quantidade de carbono da substância 2?"));
+var totalSubs2 = subs2 + 2;
+
+
+if(subs1 == totalSubs2){
+	mostra("Substâncias parecidas!")
+} else{
+	mostra("São substâncias diferentes!")
+}
+
+
+var idade = parseInt(prompt("Informe sua idade?"));
+var infoCnh = prompt("Você tem carteira de motorista? Responda SIM ou NÃO");
+
+if(idade >=18 && infoCnh == "SIM"){
+	mostra("Você tem permissão para dirigir!");
+}else{
+	mostra("Você não tem permissão para dirigir! Vá de ônibus!")
+}
+*/
+
+</script>

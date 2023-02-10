@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script> 
+
+var ano = 2038;
+var puloLinha = "<br><br><br><br>"
+
+document.write ("A idade de Maggie é " + (ano - 1981 + " anos" + "<br>"));
+
+ano = 2022;
+document.write ("A idade de Sílvia é " + (ano - 1986 + " anos")); // podemos utilizar a tag <br> tanto dentro da condição como fora dela, em uma tag separada conforme exemplo abaixo.
+document.write ("<br>");
+document.write ("A idade somada de Sílvia e Maggie é " + (41 + 36 + "<br>"));
+
+var n = 2
+
+document.write("O resultado da fórmula é : " + n * (10 / 20) + "<br>");
+
+var minhaIdade = 36;
+
+document.write ("Eu nasci em " + (ano - minhaIdade + "<br>"));
+
+var tabuada = 8;
+
+document.write ("5 vezes 1 é = " + tabuada * 1 + "<br>");
+document.write ("5 vezes 2 é = " + tabuada * 2 + "<br>");
+document.write ("5 vezes 3 é = " + tabuada * 3 + "<br>");
+document.write ("5 vezes 4 é = " + tabuada * 4 + puloLinha);
+
+var media = (41 + 12 + 18) /3;
+
+document.write ("A média das idades é " + Math.round(media) + puloLinha);
+
+
+var novoAno = 2025
+var nomeDasGatas = "Sílvia, Tegan e Maggie";
+var idadeSilvia = novoAno - 1986;
+var idadeMaggie = novoAno - 1981;
+var idadeTegan = novoAno - 1980;
+var mediaDasIdades = (idadeSilvia + idadeMaggie + idadeTegan) / 3;
+
+
+document.write ("A média de idade de " + nomeDasGatas + " é " + Math.round (mediaDasIdades) + " anos" + puloLinha); 
+
+
+// Exercício programa de Roy - Diz ele que é hacker
+
+var nomeDasFilhas = "Linda, Guaraciara e Pérola";
+var idadeLinda = 12;
+var idadeGuara = 15;
+var idadePerola = 13;
+var totalIdades = idadePerola + idadeLinda + idadeGuara;
+var mediaIdadeMeninas = totalIdades / 3;
+
+document.write ("<br>" + " A média de idade de " + nomeDasFilhas + " é " + Math.round (mediaIdadeMeninas))
+
+</script>	

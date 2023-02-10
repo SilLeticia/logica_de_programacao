@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<script>
+
+// Código para cálculo de IMC funcionando perfeitinho!!! Ai ai ai
+
+	
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var nome = prompt("Qual o seu nome?");
+
+var peso = parseFloat(prompt("Informe seu peso:"));
+
+var altura = parseFloat(prompt("Informe sua altura:"));
+
+var imc = peso / (altura * altura);
+
+var imcDig = imc.toFixed(2);
+
+mostra("Olá " + nome + " Seu IMC é de " + imcDig);
+
+	if(imcDig < 18.50){
+		mostra("Seu IMC está abaixo do normal!");
+	} 
+	if(imcDig >= 18.50 && imcDig <= 24.90){
+		mostra("Você está no peso ideal!");
+	}
+	if(imcDig >=25.00 && imcDig <= 29.90){
+		mostra("Você está com sobrepeso!");
+	}
+	if(imcDig >=30.00 && imcDig <= 39.90){
+		mostra("Você está com Grau I de obesidade!");
+	}
+	 if(imcDig >=40.00) {
+		mostra("Você está com Grau II de obesidade!");
+	}
+
+
+mostra("FIM");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function pulaLinha(){
+document.write ("<br><br>");
+}
+
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+
+var mesesTrab = parseInt(prompt("Informe a quantidade de meses para apuração:"));
+var numero = 1;
+var gastos = 0;
+while(numero <= mesesTrab){
+	var gastosMes = parseFloat(prompt("Informe o gasto mensal para apuração R$:"));
+	var gastos = gastos + gastosMes;
+	numero++;
+}
+
+var mediaGastos = gastos / mesesTrab;
+
+mostra("A média de gastos em " + mesesTrab + " meses" + " foi de " + "R$" + mediaGastos);
+
+mostra("FIM");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

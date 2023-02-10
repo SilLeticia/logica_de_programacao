@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var contador = 2;
+var numLimite = 100;
+
+while(contador <= numLimite){
+	mostra(contador);
+	contador = contador + 2;
+}
+
+mostra("<hr>")
+
+var contaNum = 30;
+
+while(contaNum <= 40){
+	if(contaNum == 33){
+		contaNum = contaNum + 1;
+	}
+
+	else{
+	mostra(contaNum);
+	contaNum = contaNum + 1;
+	}
+}
+
+mostra("<hr>");
+
+
+
+var numInformado = parseInt(prompt("Informe o contador:"))
+
+while(numInformado <= 30){
+	mostra(numInformado);
+	numInformado = numInformado + 2;
+	numInformado++;	
+}
+mostra("FIM")
+
+
+var cont = 1
+do{
+	mostra("Olá! Tudo bem? Passo  " + cont)
+	cont++;	
+} while(cont <= 20);
+
+</script>

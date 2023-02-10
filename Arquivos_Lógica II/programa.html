@@ -1,0 +1,38 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	
+	pincel.fillStyle = 'lightgrey'; // fiilStyle preenche a cor da tela no tamanho determinado acima (600x400). Esse comando deve ser vir antes do comando de tamanho (fillRect)
+	pincel.fillRect(0, 0, 600, 400); // fillRect dá o tamanho do retângulo.
+	
+
+	pincel.fillStyle = 'green';
+	pincel.fillRect (0, 0, 200, 400);
+
+	pincel.fillStyle = 'red';
+	pincel.fillRect (400, 0, 200, 400);
+				//    x   y   x    y
+
+
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath(); // comando de início do caminho do pincel.
+	pincel.moveTo(300, 200); // função que atribuímos para mover o pincel na direção determinada no parâmetro.
+	pincel.lineTo(200, 400); // função que utilizamos para determinar a linha.
+	pincel.lineTo(400, 400);
+	pincel.fill(); // função que chamamos para preencher ao fim de todas as funções antes determinadas.
+
+	/*pincel.fillStyle = 'blue';
+	pincel.beginPath(); // cada vez que quisermos criar um novo desenho, devemos chamar a função beginPath novamente.
+	pincel.arc(300, 200, 50, 0, 2 * 3.14); // para desenhar um círculo. Ângulo final em radianos para desenhar o círculo.
+	pincel.fill();
+*/
+
+	// site para consultar nomenclatura e como desenhar figuras em canvas: canvas 2d api - canvas RenderingContext2D - Web APIs
+
+
+
+</script>

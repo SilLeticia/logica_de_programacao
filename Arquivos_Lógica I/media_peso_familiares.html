@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+<script>
+	
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+
+var familiares = parseInt(prompt("Informe a quantidade de familiares:"));
+var numeroFam = 1;
+var pesoTotal = 0;
+while(numeroFam <= familiares){
+	var peso = parseFloat(prompt("Informe o peso dos familiares:"));
+	peso = peso + pesoTotal;
+	numeroFam++;
+}
+
+var mediaPeso = peso / familiares;
+
+mostra("A média de peso dos familiares é de " + mediaPeso + "Kg.");
+
+
+/*
+var contador = 1;
+
+while(contador <= 3){
+	alert("Deixe-me entrar!");
+	contador++;
+}
+*/
+
+
+
+mostra("FIM");
+
+
+
+
+
+</script>
+

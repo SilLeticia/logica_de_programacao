@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+	
+function pulaLinha(){
+	document.write("<br><br>");
+}
+
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+var dataLimite = parseInt(prompt("Informe a data limite de Copas:"));
+var anoCopa = 1930;
+
+
+while(anoCopa <= dataLimite){
+	mostra("Teve copa em " + anoCopa);
+	anoCopa = anoCopa + 4;
+}
+
+mostra("Até o ano de " + dataLimite + " houveram " + Math.round(dataLimite - 1930) / 4 + " edições de copa do mundo.");
+
+mostra("FIM");
+
+
+
+
+
+</script>

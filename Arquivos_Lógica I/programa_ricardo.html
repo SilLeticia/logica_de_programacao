@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function asteriscos(frase){
+	document.write("********************** " + "<br><br>" + frase + "<br><br>");
+}
+
+asteriscos("Bem-Vindo ao meu programa");
+asteriscos("Ele realmente funciona");
+asteriscos("Eu usei função para fazer isso");
+
+function pularLinha(){
+	document.write("<br><br>")
+}
+
+
+function exibeTitulo (titulo){
+	document.write("<h1>" + titulo + "</h1>")
+		pularLinha();
+}
+
+function exibeParagrafo(paragrafo){
+	document.write("<p>" + paragrafo + "</p>")
+}
+
+exibeTitulo("Sejam bem-vindos!");
+exibeParagrafo("Este é um simples programa utilizando funções.");
+
+
+function mostra(frase){
+	document.write(frase)
+	pularLinha();
+}
+
+var minhaIdade = 36;
+var idadeRita = 39;
+
+mostra("Nossa diferença de idade é de " + (idadeRita - minhaIdade) + " anos.");
+
+
+var anoAtual = 2022;
+var anoDesc = 1500;
+var tempoPerc = anoAtual - anoDesc;
+var difGerac = tempoPerc / 28;
+
+function mostraG(frases){
+	document.write(frases)
+	pularLinha();
+}
+
+mostraG("Até " + anoAtual + " tivemos " + Math.round (difGerac) + " gerações desde a chegada dos portugueses no Brasil em " + anoDesc);
+</script>
